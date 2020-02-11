@@ -17,7 +17,7 @@ class BurgerIngredient extends Component{
           <div className='BreadTop'>
             <div className='Seeds1'></div>;
             <div className='Seeds2'></div>;
-          </div>;
+          </div>
         );
         break;
       case('meat'):
@@ -37,11 +37,11 @@ class BurgerIngredient extends Component{
     }
     return ingredient;
   }
-
-  //prop type validation makes sure it's a string and is not empty
-  BurgerIngredient.propTypes = {
-    type: PropTypes.string.isRequired
-  }
 };
+
+//prop type validation makes sure it's a string and is not empty
+BurgerIngredient.propTypes = {
+  type: PropTypes.string.isRequired
+}
 
 export default BurgerIngredient;
